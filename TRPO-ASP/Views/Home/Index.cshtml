@@ -21,12 +21,13 @@
             <input type="number" name="sradius" placeholder="Радиус (r) основания шарового сегмента"/>
             <input type="number" name="height" placeholder="Высота (h) шарового сегмента"/>
             <button>Рассчитать</button>
-
             @if (ViewBag.Result != null)
+                
             {<p>
-                <h1>
-                    Результат: @Math.Round(ViewBag.Result, 2)
-                </h1>
+                 <h1>
+                     <hr />
+                     Результат: @Math.Round(ViewBag.Result, 2)
+                 </h1>
             </p>}
         </form>
     </div>
